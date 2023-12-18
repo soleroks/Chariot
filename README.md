@@ -24,5 +24,5 @@
 ## Can I use this?
 *Well, since I stopped my project about server and publishing this, it's free for use. But you may want to edit some of parts for your own.*
 
-## A Favor.
+## A favor.
 *I was very eager to see this bot finished. Since I am publishing this as a FOSS project. Please create your own branch based on this with your version of Chariot!* (Don't forget to exclude your tokens!)
