@@ -23,16 +23,7 @@ module.exports = {
         }
 */ 
 /**
- *     "dbSelector" : "dev",
-    "dbs" : {
-        "dev" : "mongodb+srv://Admin:melkk77320@db.rcbns02.mongodb.net/dev",
-        "live" : "mongodb+srv://Admin:melkk77320@db.rcbns02.mongodb.net/live"
-    },
-    "InvDbs": {
-        "dev" : "mongodb+srv://Admin:melkk77320@db.rcbns02.mongodb.net/envanterDev",
-        "live" : "mongodb+srv://Admin:melkk77320@db.rcbns02.mongodb.net/envanterLive"
 
-    },
     "envDbSelector" : "dev",
  */
 
