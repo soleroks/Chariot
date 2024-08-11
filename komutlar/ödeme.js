@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const moment = require('moment')
 moment.locale('tr')
-const uyeSema = require('../şemalar/PoAUser.js')
+const uyeSema = require('../mongo/PoAUser.js')
 module.exports = {
 
     data: new Discord.SlashCommandBuilder()

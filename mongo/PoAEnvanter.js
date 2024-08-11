@@ -27,5 +27,5 @@ let PoAEnvanter = new mongoose.Schema({
     }]
 })
 
-module.exports =  EnvDb.model("user", PoAEnvanter)
+module.exports =  mongoose.model("user", PoAEnvanter)
 

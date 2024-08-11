@@ -1,8 +1,7 @@
 const { ContextMenuCommandBuilder, ApplicationCommandType } = require('discord.js');
 const Discord = require('discord.js')
-const YetkiliSema = require('../şemalar/PoAYetkili.js')
-const uyeSema = require('../şemalar/PoAUser.js');
-const { uyeGetir } = require('../utils/fonksiyon.js');
+const YetkiliSema = require('../mongo/PoAYetkili.js')
+const uyeSema = require('../mongo/PoAUser.js');
 const moment = require('moment')
 module.exports = {
     // BU NE AMK

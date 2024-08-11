@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const uyeSema = require('../şemalar/PoAUser.js')
+const uyeSema = require('../mongo/PoAUser.js')
 
 module.exports = {
     name : Discord.Events.GuildMemberUpdate,

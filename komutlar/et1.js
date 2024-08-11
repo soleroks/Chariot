@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const ayarlar = require('../ayarlar.json')
+const ayarlar = require('../config/ayarlar.json')
 let uyeSema = require('../mongo/PoAUser.js')
 let envanterSema = require('../mongo/PoAEnvanter.js')
 const envanter = require('./envanter')

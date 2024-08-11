@@ -18,11 +18,11 @@ const moment = require('moment')
 moment.locale('tr')
 const allIntents = new Discord.IntentsBitField(3276799)
 const client = new Discord.Client({partials: [Discord.Partials.Message],intents: [allIntents, Discord.GatewayIntentBits.GuildMembers]})
-const ayarlar = require('./ayarlar.json')
+const ayarlar = require('./config/ayarlar.json')
 const path = require('path')
 const fs = require('fs')
 
-client.login(ayarlar.token.dev)
+client.login(ayarlar.token)
 
 
 

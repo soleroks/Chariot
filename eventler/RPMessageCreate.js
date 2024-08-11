@@ -1,7 +1,7 @@
 
 const Discord = require('discord.js')
-const uyeSema = require('../şemalar/PoAUser')
-const ayarlar = require('../ayarlar.json')
+const uyeSema = require('../mongo/PoAUser')
+const ayarlar = require('../config/ayarlar.json')
 const moment = require('moment')
 moment.locale('tr')
 module.exports = {
@@ -17,7 +17,7 @@ module.exports = {
   
         if(message.author.bot) return
         
-        if(!ayarlar.rpKategoriler.includes(message.channel.parent.id)) return
+        if(!ayarlar.rpKat.includes(message.channel.parent.id)) return
 let string = message.content.replace(/ /g, "")
 let RPPuanFinal = string.length / 4
 
