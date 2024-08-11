@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
-const uyeSema = require('../şemalar/PoAUser.js')
+const uyeSema = require('../mongo/PoAUser.js')
 
-const ayarlar = require('../ayarlar.json')
+const ayarlar = require('../config/ayarlar.json')
 module.exports = {
     name : Discord.Events.MessageDelete,
     on:true,
@@ -9,7 +9,7 @@ module.exports = {
         if(!message.content) return
         if(message.author.bot) return
 
-        if(!ayarlar.rpKategoriler.includes(message.channel.parent.id)) return
+        if(!ayarlar.rpKat.includes(message.channel.parent.id)) return
         
         let Silinecek = message.content.replace(/ /g, "")
         let SilinecekPuan = Silinecek.length / 4

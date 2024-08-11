@@ -1,4 +1,3 @@
-const globalSema = require('../şemalar/GlobalEnvanter.js')
 const Discord = require('discord.js')
 const moment = require('moment')
 moment.locale('tr')
@@ -12,8 +11,7 @@ module.exports = {
         let veri = interaction.options.getString('solid')
 
         
-     let bilgi = await globalSema.findOne({itemID: veri})
-
+     let bilgi= "yok"
      console.log(bilgi)
 
      interaction.reply({embeds: [new Discord.EmbedBuilder()

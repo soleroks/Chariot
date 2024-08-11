@@ -1,8 +1,8 @@
-const UyeSema = require('../şemalar/PoAUser.js')
+const UyeSema = require('../mongo/PoAUser.js')
 const Discord = require('discord.js')
 const moment = require('moment')
 moment.locale('tr')
-const ayarlar = require('../ayarlar.json')
+const ayarlar = require('../config/ayarlar.json')
 
 module.exports = {
 
@@ -12,7 +12,7 @@ module.exports = {
 
         if(!oldMessage.content) return
         if(oldMessage.content === newMessage.content) return
-        if(!ayarlar.rpKategoriler.includes(oldMessage.channel.parent.id)) return
+        if(!ayarlar.rpKat.includes(oldMessage.channel.parent.id)) return
         let eskiRPPuan = oldMessage.content.replace(/ /g, "")
         let eskiRPPuanFinal = eskiRPPuan.length / 4
         let yeniRPPuan = newMessage.content.replace(/ /g, "")

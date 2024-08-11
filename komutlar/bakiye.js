@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const moment = require('moment')
-const uyeSema = require('../şemalar/PoAUser.js')
+const uyeSema = require('../mongo/PoAUser.js')
 moment.locale('tr')
 
 module.exports = {

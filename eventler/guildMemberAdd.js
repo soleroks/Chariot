@@ -1,10 +1,9 @@
 
 const Discord = require('discord.js')
 const moment = require('moment')
-const uyeSema = require('../şemalar/PoAUser.js')
-const envanterSema = require('../şemalar/PoAEnvanter.js')
-const arkadasSema = require('../şemalar/PoASocial.js')
-const coinSema = require('../şemalar/AdvancedEcon.js')
+const uyeSema = require('../mongo/PoAUser.js')
+const envanterSema = require('../mongo/PoAEnvanter.js')
+const arkadasSema = require('../mongo/PoASocial.js')
 
 moment.locale('tr')
 module.exports = {

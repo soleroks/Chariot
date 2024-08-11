@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const ayarlar = require('../ayarlar.json')
+const ayarlar = require('../config/ayarlar.json')
 module.exports = {
    data: new Discord.SlashCommandBuilder()
    .setName('ping')
