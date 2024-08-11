@@ -1,6 +1,5 @@
-const ayarlar = require('../ayarlar.json')
 const Discord = require('discord.js')
-
+const ayarlar = require('../config/ayarlar.json')
 module.exports = {
     data: new Discord.SlashCommandBuilder()
 
@@ -15,9 +14,8 @@ module.exports = {
     async execute(interaction) {
 
 
-                if(!ayarlar.sahip.includes(interaction.user.id)) return interaction.reply({ephemeral:true, content: "Bu komutu sadece sunucu sahibi kullanabilir."})
+                if(ayarlar.owner !== interaction.user.id) return interaction.reply({ephemeral:true, content: "Bu komutu sadece sunucu sahibi kullanabilir."})
                
-                if(ayarlar.dbSelector === "live") return interaction.reply({ephemeral:true, content: "Bot bakım modunda değil!"})
                 let veri = await interaction.options.getString('kod')
 
                 try {
