@@ -1,0 +1,28 @@
+{
+    "token": "",
+    "tokenJRP": "",
+
+    "mongoDBPrime": "mongodb://",
+    "mongoDBBackup": "mongodb://",
+    "guildId": "1157792227288952875",
+    "clientId": "1157697196297289859",
+    "owner": "966439765966741514",
+    "rpKat": [""],
+    "info": {
+        "disclaimer" : "Mevcut Proje: Chariot Venice",
+        "disclaimer1": "Bu Chariot sürümü genel kullanım için uygundur.",
+        "disclaimer2_ChariotAPI": "Bu Chariot sürümü dahili Chariot API istemcisine sahip değil ancak ChariotAPI ile etkileşime geçiyor.",
+        "disclaimer3_procman":  "Bu Chariot sürümü Chariot İşlem Yöneticisine sahip değil.",
+        "disclaimer4_func": "Bu Chariot sürümü harici fonksiyon kütüphanesine sahip değil.",
+        "disclaimer5_time": "Bu Chariot sürümü Chariot Time kütüphanesine sahip.",
+        "disclaimer5_directives": "Bu Chariot sürümü Chariot Yönetim İlkelerini desteklemiyor.",
+        "disclaimer6_roleflow": "Bu Chariot sürümü rol akışı sistemine sahip değil.",
+        "project": {
+            "codeName": "venice",
+            "buildName": "1201",
+            "publicName": "Chariot Venice",
+            "alias": ["soleroks/Chariot", "s/c", "chr", "vnc", "venice"]
+            
+        }
+    }
+}
