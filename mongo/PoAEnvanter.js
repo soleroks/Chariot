@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
 const moment = require('moment')
 moment.locale('tr')
-const ayarlar = require('../ayarlar.json')
 
 let PoAEnvanter = new mongoose.Schema({
     userID: String,
@@ -27,7 +26,6 @@ let PoAEnvanter = new mongoose.Schema({
         }
     }]
 })
-const EnvDb = mongoose.connection.useDb('envanterDev')
 
 module.exports =  EnvDb.model("user", PoAEnvanter)
 
