@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const ayarlar = require('../ayarlar.json')
-let uyeSema = require('../şemalar/PoAUser.js')
-let envanterSema = require('../şemalar/PoAEnvanter.js')
+let uyeSema = require('../mongo/PoAUser.js')
+let envanterSema = require('../mongo/PoAEnvanter.js')
 module.exports = {
    data: new Discord.SlashCommandBuilder()
    .setName('envanter')
