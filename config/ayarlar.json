@@ -4,9 +4,9 @@
 
     "mongoDBPrime": "mongodb://",
     "mongoDBBackup": "mongodb://",
-    "guildId": "1157792227288952875",
-    "clientId": "1157697196297289859",
-    "owner": "966439765966741514",
+    "guildId": "",
+    "clientId": "",
+    "owner": "",
     "rpKat": [""],
     "info": {
         "disclaimer" : "Mevcut Proje: Chariot Venice",
@@ -19,7 +19,7 @@
         "disclaimer6_roleflow": "Bu Chariot sürümü rol akışı sistemine sahip değil.",
         "project": {
             "codeName": "venice",
-            "buildName": "1201",
+            "buildName": "1204",
             "publicName": "Chariot Venice",
             "alias": ["soleroks/Chariot", "s/c", "chr", "vnc", "venice"]
             
