@@ -1,9 +1,7 @@
 
 const Discord = require('discord.js')
 const moment = require('moment')
-const uyeSema = require('../mongo/PoAUser.js')
-const envanterSema = require('../mongo/PoAEnvanter.js')
-const arkadasSema = require('../mongo/PoASocial.js')
+const uyeSema = require('../mongo/user.js')
 
 moment.locale('tr')
 module.exports = {
@@ -24,13 +22,8 @@ module.exports = {
         let UyeBilgi = await uyeSema.findOne({"kullanici.userID" : member.id})
 
         if(UyeBilgi) {
-            embed.setFooter({text: `Bu kişi daha önce sunucuda ${UyeBilgi.kullaniciPublic.kullaniciNick} ismiyle bulunmuş.`})
-            member.send('Sunucuda daha önceden kalma bir üye kaydınız mevcut. Mevcut rolleriniz geri veriliyor. Her hangi bir şey yapmadan kaldığınız yerden devam edebilirsiniz. Path of Ascension\'a hoş geldiniz.')
-            console.log(UyeBilgi.kullaniciPublic.kullaniciRoller)
-            UyeBilgi.kullaniciPublic.kullaniciRoller.forEach(s => {
-                member.roles.add(s.rolID)
-            });
-            member.edit({nick: UyeBilgi.kullaniciPublic.kullaniciNick})
+         
+            return
 
         }
 
@@ -41,7 +34,7 @@ module.exports = {
 member.roles.add('')
 */
     
-        let yeni = await new uyeSema(
+        let yeni = new uyeSema(
             {
                 "kullanici.userID" : member.id,
                 "kullanici.userJoinDate" : member.joinedAt
@@ -51,26 +44,11 @@ member.roles.add('')
         )
         await yeni.save()
 
-
-        let yeniEnvanter = await new envanterSema(
-            {
-                userID : member.id
-           
-            }
-        )
-        await yeniEnvanter.save()
-        
-        let yeniCoin = await new coinSema(
-            {
-                userID : member.id
-           
-            }
-        )
-        await yeniCoin.save()
     }
 
 
-    member.guild.channels.cache.get('1157792298470473789').send({embeds: [embed]})
+
+       // join log kanalı member.guild.channels.cache.get('').send({embeds: [embed]})
 
 }
 }
